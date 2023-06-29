@@ -12,10 +12,14 @@
 ```Captcha_Show(playerid, c_id[], caption[], info[], bool:showcode = true)```
 - Chức năng này sẽ tạo ra một dialog Captcha cho người chơi.
 > playerid - ID người chơi
-c_id - ID của captcha
-caption[] - tiêu đề của dialog captcha
-info[] - miêu tả thông tin của dialog captcha
-showcode - hiện/ẩn mã captcha trên dialog (true/false)
+
+> c_id - ID của captcha.
+
+> caption[] - tiêu đề của dialog captcha.
+
+> info[] - miêu tả thông tin của dialog captcha.
+
+> showcode - hiện/ẩn mã captcha trên dialog (true/false).
 
 ```Captcha_Close(playerid)```
 - Đóng hộp thoại Captcha.
