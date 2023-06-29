@@ -24,6 +24,8 @@
 
 #define Captcha_Show(%1,%2, \
 	_show_captcha(%1, #%2,
+    
+#define Captcha_Close(%1)   c_Close(%1)
 
 #define Captcha:%1(%2)					forward ct_%1(%2); public ct_%1(%2)
 
