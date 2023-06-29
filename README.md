@@ -2,7 +2,7 @@
 
 ## Introduction
 
-- Hệ thống hiện Captcha cho người chơi, Captcha sẽ được hiện với một dialog (DIALOG_STYLE_INPUT) đơn giản, thật ra thư viện này được tạo ra có thể không có gì mới mẻ hay xịn xò, nhưng nó có thể sẽ giúp ít cho bạn.
+- Hệ thống hiện Captcha cho người chơi, Captcha sẽ được hiện với một dialog (DIALOG_STYLE_INPUT) đơn giản, nếu thư viện chưa được tốt mong bạn thông cảm, mình sẽ cố gắng cập nhật các phiên bản mới nhất và tốt nhất.
 - Nếu bạn muốn mang nó về và chỉnh sửa, vui lòng giữ lại tên tác giả vì đây là phép lịch sự tối thiểu.
 
 ## Function
