@@ -6,6 +6,13 @@
     * Date: 29/06/2023
     * Copyright: (C) 2023
 
+    <!>         Change log 0.1            <!>
+
+        - Added Captcha_Code(playerid)
+
+        - Fixed show dialog (string)
+
+    <!> ================================= <!>
 */
 
 #if defined _captcha_included
@@ -53,9 +60,14 @@ stock _show_captcha(playerid, c_id[], caption[], info[], bool:showcode = true)
     random_string(_code);
     strcat(captcha_code[playerid], _code);
     
-    if(showcode) format(string, sizeof string, "Captcha code: %s\n\n%s", captcha_code[playerid], info);
+    if(showcode) {
+        format(string, sizeof string, "Captcha code: %s\n\n%s", captcha_code[playerid], info);
+        ShowPlayerDialog(playerid, 1186, DIALOG_STYLE_INPUT, caption, string, "Xac nhan", "Dong");
+    }
+    else {
+        ShowPlayerDialog(playerid, 1186, DIALOG_STYLE_INPUT, caption, info, "Xac nhan", "Dong");
+    }
 
-    ShowPlayerDialog(playerid, 1186, DIALOG_STYLE_INPUT, caption, string, "Xac nhan", "Dong");
     strpack(captcha_id[playerid], c_id, 32 char);
 
     // SendClientMessage(playerid, -1, "show");
@@ -69,6 +81,11 @@ stock c_Close(playerid) // Close Captcha Dialog
     captcha_code[playerid] = "";
 
     return ShowPlayerDialog(playerid, -1, DIALOG_STYLE_INPUT, " ", " ", " ", "");
+}
+
+stock Captcha_Code(playerid)
+{
+    return (captcha_code[playerid]);
 }
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
