@@ -24,6 +24,9 @@
 ```Captcha_Close(playerid)```
 - Đóng hộp thoại Captcha.
 
+```Captcha_Code(playerid)```
+- Lấy mã captcha hiện tại người chơi có.
+
 ## Credits
 
 - Ausil (aujiz) -  scripting
